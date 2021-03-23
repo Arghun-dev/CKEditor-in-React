@@ -54,3 +54,7 @@ function App() {
 
 export default App;
 ```
+
+
+## How to upload images to our server using CKEditor?
+
