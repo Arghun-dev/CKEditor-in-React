@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import '@ckeditor/ckeditor5-build-classic/build/translations/fa';
 import ReactHtmlParser from 'react-html-parser';
 import './App.css';
 
@@ -28,6 +29,9 @@ function App() {
           onFocus={ ( event, editor ) => {
               console.log( 'Focus.', editor );
           } }
+          config={{
+            language: 'fa'
+          }}
       />
       <div>
         {showData ? ReactHtmlParser(data) : ''}
